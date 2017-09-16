@@ -1,5 +1,5 @@
 {
-  "name": "NBA Stats API",
+  "name": "NBA-Stats-API-Backend",
   "version": "1.0.0",
   "description": "Interface for working with the NBA Stats API.",
   "main": "src/app.js",

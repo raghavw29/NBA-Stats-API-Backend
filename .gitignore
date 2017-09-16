@@ -6,3 +6,4 @@ jsconfig.json
 config/keys/jwt*
 config/*.json
 EC2/**
+*.log
