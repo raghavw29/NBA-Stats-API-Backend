@@ -8,3 +8,4 @@ There are a few files that are not included in the repo that this application ne
 2) Create a "logs" directory in the root directory of the project.
 3) Create an "exceptions" directory in the "logs" directory you just created.
 4) Navigate to the project directory in your console and type "npm run start" to make sure it works.
+5) Use any HTTP agent / browser to navigate to "http://localhost:3001/api/". If you see a message, you're good!
