@@ -1,7 +1,7 @@
 {
-  "name": "boilerplate",
+  "name": "NBA Stats API",
   "version": "1.0.0",
-  "description": "Node Project Boilerplate",
+  "description": "Interface for working with the NBA Stats API.",
   "main": "src/app.js",
   "scripts": {
     "start": "node src/app.js",
@@ -9,10 +9,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/amagid/bigpie-cir-automation-backend.git"
+    "url": "git+https://github.com/amagid/NBA-Stats-API-Backend.git"
   },
   "author": "Aaron Magid",
-  "homepage": "https://github.com/amagid/boilerplate#readme",
+  "homepage": "https://github.com/amagid",
   "dependencies": {
     "bluebird": "^3.4.6",
     "body-parser": "^1.15.2",
