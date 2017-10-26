@@ -8,5 +8,14 @@ angular.
         function PhoneDetailController($routeParams, Phone) {
           var self = this;
           self.testVar = "Testing";
+          console.log("attempting http req");
+          var request = $http.get('/data');
+          request.success(function(data) {
+            $scope.data = data;
+            console.log(data);
+          });
+          request.error(function(data) {
+            console.log('Error: ' + data);
+          })
         }]
     })

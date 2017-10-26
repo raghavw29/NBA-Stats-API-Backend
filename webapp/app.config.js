@@ -7,7 +7,7 @@ angular.
       $locationProvider.hashPrefix('!');
 
       $routeProvider.
-        when('/', {
+        when('/test', {
           template: '<table-cont></table-cont>'
         }).otherwise('/');
     }
