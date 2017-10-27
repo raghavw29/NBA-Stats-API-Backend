@@ -6,7 +6,7 @@
 }
 
 .container { /* contains the table */
-
+	font-family: Arial;
 }
 
 .table-separator {
@@ -29,4 +29,8 @@
 .imgContainer {
   width: 200px;
   min-width: 200px;
+}
+
+.chartRow {
+	padding-top: 30px;
 }

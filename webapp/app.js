@@ -7,13 +7,6 @@ app.controller('myController', function($scope, $http) {
   
   $scope.curryData = [4,18,1,93,6,43,2,3];
   $scope.irvingData = [2,7,52,6,75,1,88,5];
-
-  $scope.$watch('inRight', function() {
-
-  });
-  $scope.$watch('inLeft', function() {
-
-  });
   
   $scope.leftkeypress = function($event) {
 	if ($event.keyCode === 13) {
@@ -28,7 +21,7 @@ app.controller('myController', function($scope, $http) {
     } else {
 			$scope.lsData = [];
 			$scope.lsShow = false;
-			$scope.leftimg="";
+			$scope.leftimg="img";
     }
 	  }
   }
@@ -39,14 +32,14 @@ app.controller('myController', function($scope, $http) {
 			$scope.rsData = $scope.curryData;
 			$scope.rsShow = true;
 			$scope.rightimg="img/curry.jpg";
-	  }else if ($scope.inLeft === 'irving' ) {
+	  }else if ($scope.inRight === 'irving' ) {
 			$scope.rsData = $scope.irvingData;
 			$scope.rsShow=true;
 			$scope.rightimg="img/irving.jpg";
     } else {
 			$scope.rsData = [];
 			$scope.rsShow = false;
-			$scope.rightimg="";
+			$scope.rightimg="img";
     }
 	  }
   }

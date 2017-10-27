@@ -28,8 +28,8 @@
             </td>
           </tr>
           <tr>
-            <td class="imgContainer"> <img  ng-show="lsShow" width="200" ng-src="{{leftimg}}"<!--src="img/curry.jpg"-->></td>
-            <td align="right">
+            <td class="imgContainer"> <img  ng-show="lsShow" width="200" ng-src="{{leftimg}}"><!--src="img/curry.jpg"--></td>
+            <td  class="container" align="right">
               Points per game <br>
               Rebounds per game <br>
               Assists per game <br>
@@ -40,13 +40,13 @@
               Free throws made per game <br>
             </td>
             <td class="numContainer" align="center" border-right="1">
-              <div class="statNumber" ng-repeat="item in lsData">{{item}}</div>
+              <div class="container statNumber" ng-repeat="item in lsData">{{item}}</div>
             </td>
             <td class="table-separator"></td>
             <td class="numContainer" align="center">
-              <div class="statNumber" ng-repeat="item in rsData">{{item}}</div>
+              <div class="container statNumber" ng-repeat="item in rsData">{{item}}</div>
             </td>
-            <td>
+            <td ng-show="rsclass="container">
               Points per game <br>
               Rebounds per game <br>
               Assists per game <br>
@@ -58,10 +58,10 @@
             </td>
             <td class="imgContainer"> <img ng-show="rsShow" width="200" align="right" ng-src="{{rightimg}}"> </td>
           </tr>
-          <tr>
-            <td colspan="3" align="right">chart1 </td>
+          <tr class="chartRow">
+            <td colspan="3" align="right"><img width="300" ng-show="lsShow" src="img/fillerchart.png"> </td>
             <td class="table-separator"></td>
-            <td colspan="3"> chart2</td>
+            <td colspan="3"> <img width="300" ng-show="rsShow" src="img/fillerchart.png"></td>
           </tr>
         </tbody>
       </table>
