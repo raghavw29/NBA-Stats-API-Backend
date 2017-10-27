@@ -13,7 +13,6 @@
 
 <div class="nbaApp">
   <div ng-controller="myController">
-    {{testVar}}
     <div class="container">
       <img src="img/badlogo.jpg" style="margin: auto; display: block" width="400">
       <img src="img/fillercomp.png" style="margin: auto; display: block" width="50">
@@ -21,11 +20,11 @@
         <tbody>
           <tr>
             <td colspan="3" align="right">
-              <input type="text" ng-model="inLeft" placeholder="Search for a player or team here">
+              <input type="text" ng-keydown="leftkeypress($event)" ng-model="inLeft" placeholder="Search for a player or team here">
             </td>
             <td class="table-separator"></td>
             <td colspan="3">
-              <input type="text" ng-model="inRight" placeholder="Search for a player or team here">
+              <input type="text" ng-keydown="rightkeypress($event)" ng-model="inRight" placeholder="Search for a player or team here">
             </td>
           </tr>
           <tr>
