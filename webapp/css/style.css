@@ -15,3 +15,18 @@
   border: 0px;
 
 }
+
+.statNumber {
+  padding: auto;
+  /*margin: 0px 0;*/
+  list-style: none;
+}
+
+.numContainer {
+
+}
+
+.imgContainer {
+  width: 200px;
+  min-width: 200px;
+}
