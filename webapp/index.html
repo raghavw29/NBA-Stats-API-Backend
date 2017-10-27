@@ -15,7 +15,7 @@
   <div ng-controller="myController">
     <div class="container">
       <img src="img/badlogo.jpg" style="margin: auto; display: block" width="400">
-      <img src="img/fillercomp.png" style="margin: auto; display: block" width="50">
+      <img src="img/fillercomp.png" style="margin: auto; display: block" width="35">
       <table style="width: 100%; max-width: 900px;" align="center" cellpadding = "2">
         <tbody>
           <tr>
@@ -28,7 +28,7 @@
             </td>
           </tr>
           <tr>
-            <td class="imgContainer"> <img  ng-show="lsShow" width="200" src="img/curry.jpg"></td>
+            <td class="imgContainer"> <img  ng-show="lsShow" width="200" ng-src="{{leftimg}}"<!--src="img/curry.jpg"-->></td>
             <td align="right">
               Points per game <br>
               Rebounds per game <br>
@@ -56,7 +56,7 @@
               Three pointers per game <br>
               Free throws made per game <br>
             </td>
-            <td class="imgContainer"> <img ng-show="rsShow" width="200" align="right" src="img/irving.jpg"> </td>
+            <td class="imgContainer"> <img ng-show="rsShow" width="200" align="right" ng-src="{{rightimg}}"> </td>
           </tr>
           <tr>
             <td colspan="3" align="right">chart1 </td>
